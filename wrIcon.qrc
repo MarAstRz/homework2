@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>ok.png</file>
+    <file>wrong.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,21 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>user_blue.png</file>
+    <file>filter_g.png</file>
+    <file>setting_g.png</file>
+    <file>info_b.png</file>
+    <file>user_g.png</file>
+    <file>info_g.png</file>
+    <file>order_g.png</file>
+    <file>message_g.png</file>
+    <file>message_b.png</file>
+    <file>message_blue.png</file>
+    <file>message_w.png</file>
+    <file>order_b.png</file>
+    <file>order_blue.png</file>
+    <file>order_w.png</file>
+    <file>setting_b.png</file>
+    <file>setting_blue.png</file>
+    <file>setting_w.png</file>
+  </qresource>
+</RCC>

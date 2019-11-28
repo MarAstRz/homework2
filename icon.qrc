@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="icon_test">
+    <file>fire-fill.png</file>
+    <file>home-fill.png</file>
+  </qresource>
+</RCC>
