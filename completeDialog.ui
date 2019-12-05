@@ -38,35 +38,6 @@
     <string notr="true">background-color: rgb(255, 255, 255);
 border-radius:6px</string>
    </property>
-   <widget class="QPushButton" name="closeButton">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>8</y>
-      <width>14</width>
-      <height>14</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>PingFang SC</family>
-      <pointsize>9</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton{
-color : white;
-border : none;
-background-color : rgb(253, 102, 102);
-border-radius:7px;
-}
-QPushButton:hover{
-color: black;}</string>
-    </property>
-    <property name="text">
-     <string>×</string>
-    </property>
-   </widget>
    <widget class="QToolButton" name="toolButton">
     <property name="geometry">
      <rect>
@@ -90,7 +61,7 @@ color: black;}</string>
     </property>
     <property name="icon">
      <iconset resource="wrIcon.qrc">
-      <normaloff>:/icon/ok.png</normaloff>:/icon/ok.png</iconset>
+      <normaloff>:/icon/complete.png</normaloff>:/icon/complete.png</iconset>
     </property>
     <property name="iconSize">
      <size>

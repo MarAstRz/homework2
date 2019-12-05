@@ -1,6 +1,4 @@
-
 from PyQt5 import QtCore, QtWidgets
-
 import mainWindowController
 import loginWindowController
 
@@ -17,14 +15,10 @@ class ViewController(QtCore.QObject):
         self.viewMainWIn.refreshCard(userId, userName, userClass)
 
 
-
 if __name__ == "__main__":
     import sys
-
     app = QtWidgets.QApplication(sys.argv)
     view = ViewController()
     view.loadLoginView()
-
     sys.exit(app.exec_())
 
-    # Form.setWindowFlags(Qt.Qt.CustomizeWindowHint)

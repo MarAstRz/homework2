@@ -9,8 +9,10 @@ import wrongDialog
 import updateDialog as ud
 import networkThread
 
+
 def file_extension(path):
     return os.path.splitext(path)[1]
+
 
 class mainWindowController(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None):
@@ -61,8 +63,6 @@ class mainWindowController(QtWidgets.QMainWindow, Ui_MainWindow):
                                                     self.label.text(),
                                                     className,
                                                     card))
-
-
         gridLayout.addWidget(ui.widget_2)
 
     def closeDialog(self):
@@ -70,13 +70,13 @@ class mainWindowController(QtWidgets.QMainWindow, Ui_MainWindow):
         self.widget.layout().deleteLater()
 
     def submit(self, path, name, className, ui):
-        if (path != ""):
+        if path != "":
             self.setupDialog("loading", "请稍后...")
             _path = path
             _class = '信计172'
             _name = name
             _dir = '/data/fff/homework2.0/main/' + _class + '/' + className + '/'
-            #_dir = '/Users/marast/Downloads/homework/main/' + _class + '/' + className + '/'
+            # _dir = '/Users/marast/Downloads/homework/main/' + _class + '/' + className + '/'
             fileName = _name
             fileExtension = file_extension(_path)
             try:
@@ -86,7 +86,6 @@ class mainWindowController(QtWidgets.QMainWindow, Ui_MainWindow):
                 self.thread.start()
             except (FileNotFoundError):
                 print("dir not found")
-
 
     def successSolt(self, b, ui):
         print(b)
@@ -130,14 +129,10 @@ class mainWindowController(QtWidgets.QMainWindow, Ui_MainWindow):
             self.addCard2(res.json()[0][res.json()[1][i]], "null", "已提交", len(res.json()[2]) + i)
         self.label.setText(userId + ' ' + userName)
 
-
     def mousePressEvent(self, event):
-        #print(event.button(),Qt.Qt.LeftButton)
         if event.button() == Qt.Qt.LeftButton:
             self.m_flag = True
-
             self.m_Position = event.globalPos() - self.pos()  # 获取鼠标相对窗口的位置
-
             event.accept()
             self.setCursor(Qt.QCursor(Qt.Qt.OpenHandCursor))  #更改鼠标图标
 
@@ -145,10 +140,8 @@ class mainWindowController(QtWidgets.QMainWindow, Ui_MainWindow):
         if Qt.Qt.LeftButton and self.m_flag:
             self.move(QMouseEvent.globalPos()-self.m_Position)#更改窗口位置
             QMouseEvent.accept()
-            #print("2")
 
     def mouseReleaseEvent(self, QMouseEvent):
         self.m_flag=False
         self.setCursor(Qt.QCursor(Qt.Qt.ArrowCursor))
-       # print("3")
 
