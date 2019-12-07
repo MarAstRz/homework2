@@ -43,3 +43,5 @@ class Ui_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.toolButton.setText(_translate("Form", "失败"))
+
+import wrIcon_rc

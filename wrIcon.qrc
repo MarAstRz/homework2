@@ -2,5 +2,6 @@
   <qresource prefix="icon">
     <file>complete.png</file>
     <file>wrong.png</file>
+    <file>filter_g.png</file>
   </qresource>
 </RCC>
