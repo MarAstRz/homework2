@@ -1,7 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
@@ -32,7 +31,7 @@ class Ui_Form(object):
         self.pushButton.setFont(font)
         self.pushButton.setStyleSheet("color: rgb(0, 0, 0);\n"
 "border: 1px solid rgba(0, 0, 0, 178);")
-        self.pushButton.clicked.connect(lambda : self.chooseFile())
+
         self.pushButton.setObjectName("pushButton")
         self.submitButton = QtWidgets.QPushButton(self.widget_2)
         self.submitButton.setGeometry(QtCore.QRect(112, 108, 96, 32))
@@ -78,10 +77,24 @@ class Ui_Form(object):
         self.closeButton.setText(_translate("Form", "×"))
         self.classNameLabel.setText(_translate("Form", "NULL"))
 
+    def switch(self, index):
+        if index == 1:
+            self.pushButton.clicked.connect(lambda: self.choosePath())
+        else:
+            self.pushButton.clicked.connect(lambda: self.chooseFile())
+
     def chooseFile(self):
         fileNameChoose, fileType = QtWidgets.QFileDialog.getOpenFileName()  # 设置文件扩展名过滤,用双分号间隔
-
         self.lineEdit.setText(fileNameChoose)
+
+    def choosePath(self):
+        pathChoose = QtWidgets.QFileDialog.getExistingDirectory(None, "getExistingDirectory", "./")
+        self.lineEdit.setText(pathChoose)
+
+
+    def adminDownloadTextSet(self):
+        self.pushButton.setText("选择路径")
+        self.submitButton.setText("下载")
 
 
 

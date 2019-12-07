@@ -1,44 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08cad10c-09f9-4a50-933b-c91c746a1df7" name="Default Changelist" comment="pycharmCommitTest">
+    <list default="true" id="08cad10c-09f9-4a50-933b-c91c746a1df7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/adminCard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminCard.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newCard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newCard.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spss实验11.28.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/completeDialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/completeDialog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/completeDialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/completeDialog.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire-fill.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home-fill.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon.qrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info_b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info_g.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/loginWindowController.py" beforeDir="false" afterPath="$PROJECT_DIR$/loginWindowController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.ui" beforeDir="false" afterPath="$PROJECT_DIR$/main.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainWindow.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainWindow.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainWindowController.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainWindowController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainWindowIcon.qrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainWindow_old.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message_b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message_blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message_g.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message_w.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ok.png" beforeDir="false" afterPath="$PROJECT_DIR$/complete.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order_b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order_blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order_g.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order_w.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/setting_b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/setting_blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/setting_g.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/setting_w.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/networkThread.py" beforeDir="false" afterPath="$PROJECT_DIR$/networkThread.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sorce.py" beforeDir="false" afterPath="$PROJECT_DIR$/sorce.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_g.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrIcon.qrc" beforeDir="false" afterPath="$PROJECT_DIR$/wrIcon.qrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrIcon_rc.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrIcon_rc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrongDialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/wrongDialog.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/updateDialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/updateDialog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrongDialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrongDialog.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +54,11 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -89,19 +73,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager">
     <configuration name="sorce" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -131,6 +103,18 @@
         <item itemvalue="Python.sorce" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -198,7 +182,11 @@
       <workItem from="1574149538588" duration="446000" />
       <workItem from="1575011713951" duration="1724000" />
       <workItem from="1575450593061" duration="825000" />
-      <workItem from="1575528433574" duration="2698000" />
+      <workItem from="1575528433574" duration="3163000" />
+      <workItem from="1575542049979" duration="731000" />
+      <workItem from="1575599597209" duration="7238000" />
+      <workItem from="1575687104964" duration="666000" />
+      <workItem from="1575715323186" duration="12554000" />
     </task>
     <task id="LOCAL-00001" summary="pycharmCommitTest">
       <created>1575012189340</created>
@@ -221,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575012969511</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="文件清理">
+      <created>1575531392661</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575531392661</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,14 +248,34 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="pycharmCommitTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="pycharmCommitTest" />
+    <MESSAGE value="文件清理" />
+    <option name="LAST_COMMIT_MESSAGE" value="文件清理" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1398" height="201" key="GridCell.Tab.0.bottom" timestamp="1575729677275">
+      <screen x="0" y="0" width="1440" height="827" />
+    </state>
+    <state width="1398" height="201" key="GridCell.Tab.0.bottom/0.0.1440.827@0.0.1440.827" timestamp="1575729677275" />
+    <state width="1398" height="201" key="GridCell.Tab.0.center" timestamp="1575729677274">
+      <screen x="0" y="0" width="1440" height="827" />
+    </state>
+    <state width="1398" height="201" key="GridCell.Tab.0.center/0.0.1440.827@0.0.1440.827" timestamp="1575729677274" />
+    <state width="1398" height="201" key="GridCell.Tab.0.left" timestamp="1575729677274">
+      <screen x="0" y="0" width="1440" height="827" />
+    </state>
+    <state width="1398" height="201" key="GridCell.Tab.0.left/0.0.1440.827@0.0.1440.827" timestamp="1575729677274" />
+    <state width="1398" height="201" key="GridCell.Tab.0.right" timestamp="1575729677275">
+      <screen x="0" y="0" width="1440" height="827" />
+    </state>
+    <state width="1398" height="201" key="GridCell.Tab.0.right/0.0.1440.827@0.0.1440.827" timestamp="1575729677275" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/homework2$sorce.coverage" NAME="sorce Coverage Results" MODIFIED="1575531234324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/hw_pyqt$login.coverage" NAME="login Coverage Results" MODIFIED="1572340862392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/hw_pyqt$untitled.coverage" NAME="untitled Coverage Results" MODIFIED="1571974733945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hw_pyqt$sorce.coverage" NAME="sorce Coverage Results" MODIFIED="1573961941485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hw_pyqt$untitled2.coverage" NAME="untitled2 Coverage Results" MODIFIED="1572335505085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/hw_pyqt$untitled.coverage" NAME="untitled Coverage Results" MODIFIED="1571974733945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/homework2$sorce.coverage" NAME="sorce Coverage Results" MODIFIED="1575729677263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/hw_pyqt$login.coverage" NAME="login Coverage Results" MODIFIED="1572340862392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hw_pyqt$main_old.coverage" NAME="main_old Coverage Results" MODIFIED="1573214156936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

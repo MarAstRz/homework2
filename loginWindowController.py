@@ -1,11 +1,14 @@
-from PyQt5 import QtCore, QtWidgets, Qt
 import configparser
+import os
+import sys
+
+from PyQt5 import QtCore, QtWidgets, Qt
+
 import login
-import os, sys
 
 
 class loginWindowController(QtWidgets.QWidget, login.Ui_Form):
-    loginSignal = Qt.pyqtSignal(str, str, str)
+    loginSignal = Qt.pyqtSignal(str, str, str, str)
 
     def __init__(self, parent=None):
         super(loginWindowController, self).__init__(parent)
@@ -18,7 +21,8 @@ class loginWindowController(QtWidgets.QWidget, login.Ui_Form):
     def loginButtonClicked(self):
         if self.userIdEdit.text() != "" and self.userNameEdit.text() != "":
             self.login()
-            self.loginSignal.emit(self.userIdEdit.text(), self.userNameEdit.text(), "信计172")
+
+            self.loginSignal.emit(self.userIdEdit.text(), self.userNameEdit.text(), "admin", "信计172")
             self.close()
 
     def mousePressEvent(self, event):

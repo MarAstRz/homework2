@@ -1,14 +1,6 @@
-from PyQt5 import QtCore, QtGui, QtWidgets, Qt
-import classCard1
-import classCard2
-import updateDialog as ud
-import loadingDialog
-import time
-import requests
-import completeDialog
-import wrongDialog
 import os
-import sorce
+
+from PyQt5 import QtCore, QtGui, QtWidgets, Qt
 
 
 def file_extension(path):
@@ -44,9 +36,6 @@ class Ui_MainWindow(object):
         self.topTitleBar.setObjectName("topTitleBar")
         self.closeButton = QtWidgets.QPushButton(self.topTitleBar)
         self.closeButton.setGeometry(QtCore.QRect(8, 8, 14, 14))
-        #self.closeButton.clicked.connect(QtCore.QCoreApplication.instance().quit)
-
-
         font = QtGui.QFont()
         font.setFamily("PingFang SC")
         font.setPointSize(9)
@@ -171,4 +160,3 @@ class Ui_MainWindow(object):
         self.statusbar.showMessage("v2.0.0")
 
 
-import mainWindowIcon_rc
