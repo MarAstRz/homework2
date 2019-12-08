@@ -5,10 +5,11 @@ import sys
 from PyQt5 import QtCore, QtWidgets, Qt
 
 import login
+import networkThread
 
 
 class loginWindowController(QtWidgets.QWidget, login.Ui_Form):
-    loginSignal = Qt.pyqtSignal(str, str, str, str)
+    loginSignal = Qt.pyqtSignal(object, str, str, str, str)
 
     def __init__(self, parent=None):
         super(loginWindowController, self).__init__(parent)
@@ -21,9 +22,11 @@ class loginWindowController(QtWidgets.QWidget, login.Ui_Form):
     def loginButtonClicked(self):
         if self.userIdEdit.text() != "" and self.userNameEdit.text() != "":
             self.login()
-
-            self.loginSignal.emit(self.userIdEdit.text(), self.userNameEdit.text(), "admin", "信计172")
-            self.close()
+            self.label.setText("正在登陆")
+            self.t = networkThread.loginNetwork(self.userIdEdit.text(), self)
+            self.t.start()
+            #self.loginSignal.emit(self.userIdEdit.text(), self.userNameEdit.text(), "admin", "信计172")
+            #self.close()
 
     def mousePressEvent(self, event):
         if event.button() == Qt.Qt.LeftButton:

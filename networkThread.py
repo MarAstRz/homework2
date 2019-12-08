@@ -98,3 +98,61 @@ class adminCardWorker(Qt.QThread):
         #print("111" + self.userName)
         self.netResult.emit(self.ui, b, self.userClass)
 
+
+class loginNetwork(Qt.QThread):
+    def __init__(self, userId, object):
+        super(loginNetwork, self).__init__()
+        self.userId = userId
+        self.object = object
+
+    def run(self):
+        data = {'userId': self.userId}
+        b = requests.get('http://www.marast.cn:4000/login', timeout=20, data = data)
+        #print(b.json()[0]["id"])
+        self.object.loginSignal.emit(self.object, self.object.userIdEdit.text(), self.object.userNameEdit.text(), b.json()[0]["status"], b.json()[0]["class"])
+        #self.object.close()
+
+class addNewCardNetWork(Qt.QThread):
+    netResult = Qt.pyqtSignal(object, int, int)
+    refreshCard = Qt.pyqtSignal(object)
+    cDialog = Qt.pyqtSignal(object)
+    def __init__(self, userClass, userCourse, object):
+        super(addNewCardNetWork, self).__init__()
+        self.userClass = userClass
+        self.object = object
+        self.userCourse = userCourse
+        self.netResult.connect(mainWindowController.mainWindowController.successSolt)
+        self.refreshCard.connect(mainWindowController.mainWindowController.adminRefreshCard)
+        self.cDialog.connect(mainWindowController.mainWindowController.closeDialog)
+
+
+    def run(self):
+        data = {'userClass': self.userClass, 'userCourse': self.userCourse}
+        b = requests.get('http://www.marast.cn:4000/mkdir', timeout=20, data=data)
+        self.netResult.emit(self.object, b.status_code, 0)
+        if b.status_code == 200:
+            self.refreshCard.emit(self.object)
+        time.sleep(2)
+        self.cDialog.emit(self.object)
+
+class delDirNetwork(Qt.QThread):
+    netResult = Qt.pyqtSignal(object, int, int)
+    refreshCard = Qt.pyqtSignal(object)
+    cDialog = Qt.pyqtSignal(object)
+    def __init__(self, userClass, userCourse, object):
+        super(delDirNetwork, self).__init__()
+        self.userClass = userClass
+        self.userCourse = userCourse
+        self.object = object
+        self.netResult.connect(mainWindowController.mainWindowController.successSolt)
+        self.refreshCard.connect(mainWindowController.mainWindowController.adminRefreshCard)
+        self.cDialog.connect(mainWindowController.mainWindowController.closeDialog)
+
+    def run(self):
+        data = {'userClass': self.userClass, 'userCourse': self.userCourse}
+        b = requests.get('http://www.marast.cn:4000/rmdir', timeout=20, data=data)
+        self.netResult.emit(self.object, b.status_code, 0)
+        if b.status_code == 200:
+            self.refreshCard.emit(self.object)
+        time.sleep(2)
+        self.cDialog.emit(self.object)

@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08cad10c-09f9-4a50-933b-c91c746a1df7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/newCourseDialog.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newCourseDialog.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/verifyDialog.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/verifyDialog.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loginWindowController.py" beforeDir="false" afterPath="$PROJECT_DIR$/loginWindowController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainWindowController.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainWindowController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/networkThread.py" beforeDir="false" afterPath="$PROJECT_DIR$/networkThread.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sorce.py" beforeDir="false" afterPath="$PROJECT_DIR$/sorce.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spss实验11.28.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user.ini" beforeDir="false" afterPath="$PROJECT_DIR$/user.ini" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +183,10 @@
       <workItem from="1575542049979" duration="731000" />
       <workItem from="1575599597209" duration="7238000" />
       <workItem from="1575687104964" duration="666000" />
-      <workItem from="1575715323186" duration="12820000" />
+      <workItem from="1575715323186" duration="13165000" />
+      <workItem from="1575782146216" duration="269000" />
+      <workItem from="1575783925948" duration="11366000" />
+      <workItem from="1575799341250" duration="4934000" />
     </task>
     <task id="LOCAL-00001" summary="pycharmCommitTest">
       <created>1575012189340</created>
@@ -209,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575729850786</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="12月7日上传(bug修改）">
+      <created>1575730110919</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575730110919</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,40 +264,44 @@
     <MESSAGE value="pycharmCommitTest" />
     <MESSAGE value="文件清理" />
     <MESSAGE value="12月7日上传" />
-    <option name="LAST_COMMIT_MESSAGE" value="12月7日上传" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="12月7日上传(bug修改）" />
+    <option name="LAST_COMMIT_MESSAGE" value="12月7日上传(bug修改）" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="351" y="105" key="CommitChangelistDialog2" timestamp="1575729850638">
+    <state x="351" y="105" key="CommitChangelistDialog2" timestamp="1575730110811">
       <screen x="0" y="0" width="1440" height="827" />
     </state>
-    <state x="351" y="105" key="CommitChangelistDialog2/0.0.1440.827@0.0.1440.827" timestamp="1575729850638" />
-    <state width="1398" height="201" key="GridCell.Tab.0.bottom" timestamp="1575730075269">
+    <state x="351" y="105" key="CommitChangelistDialog2/0.0.1440.827@0.0.1440.827" timestamp="1575730110811" />
+    <state width="1398" height="201" key="GridCell.Tab.0.bottom" timestamp="1575804368208">
       <screen x="0" y="0" width="1440" height="827" />
     </state>
-    <state width="1398" height="201" key="GridCell.Tab.0.bottom/0.0.1440.827@0.0.1440.827" timestamp="1575730075269" />
-    <state width="1398" height="201" key="GridCell.Tab.0.center" timestamp="1575730075268">
+    <state width="1398" height="201" key="GridCell.Tab.0.bottom/0.0.1440.827@0.0.1440.827" timestamp="1575804368208" />
+    <state width="1398" height="201" key="GridCell.Tab.0.center" timestamp="1575804368207">
       <screen x="0" y="0" width="1440" height="827" />
     </state>
-    <state width="1398" height="201" key="GridCell.Tab.0.center/0.0.1440.827@0.0.1440.827" timestamp="1575730075268" />
-    <state width="1398" height="201" key="GridCell.Tab.0.left" timestamp="1575730075267">
+    <state width="1398" height="201" key="GridCell.Tab.0.center/0.0.1440.827@0.0.1440.827" timestamp="1575804368207" />
+    <state width="1398" height="201" key="GridCell.Tab.0.left" timestamp="1575804368207">
       <screen x="0" y="0" width="1440" height="827" />
     </state>
-    <state width="1398" height="201" key="GridCell.Tab.0.left/0.0.1440.827@0.0.1440.827" timestamp="1575730075267" />
-    <state width="1398" height="201" key="GridCell.Tab.0.right" timestamp="1575730075268">
+    <state width="1398" height="201" key="GridCell.Tab.0.left/0.0.1440.827@0.0.1440.827" timestamp="1575804368207" />
+    <state width="1398" height="201" key="GridCell.Tab.0.right" timestamp="1575804368208">
       <screen x="0" y="0" width="1440" height="827" />
     </state>
-    <state width="1398" height="201" key="GridCell.Tab.0.right/0.0.1440.827@0.0.1440.827" timestamp="1575730075268" />
-    <state x="320" y="153" key="Vcs.Push.Dialog.v2" timestamp="1575729853076">
+    <state width="1398" height="201" key="GridCell.Tab.0.right/0.0.1440.827@0.0.1440.827" timestamp="1575804368208" />
+    <state x="320" y="153" key="Vcs.Push.Dialog.v2" timestamp="1575730112360">
       <screen x="0" y="0" width="1440" height="827" />
     </state>
-    <state x="320" y="153" key="Vcs.Push.Dialog.v2/0.0.1440.827@0.0.1440.827" timestamp="1575729853076" />
+    <state x="320" y="153" key="Vcs.Push.Dialog.v2/0.0.1440.827@0.0.1440.827" timestamp="1575730112360" />
+    <state x="385" y="151" width="670" height="676" key="search.everywhere.popup" timestamp="1575803851277">
+      <screen x="0" y="0" width="1440" height="827" />
+    </state>
+    <state x="385" y="151" width="670" height="676" key="search.everywhere.popup/0.0.1440.827@0.0.1440.827" timestamp="1575803851277" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/hw_pyqt$sorce.coverage" NAME="sorce Coverage Results" MODIFIED="1573961941485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hw_pyqt$untitled2.coverage" NAME="untitled2 Coverage Results" MODIFIED="1572335505085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hw_pyqt$untitled.coverage" NAME="untitled Coverage Results" MODIFIED="1571974733945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/homework2$sorce.coverage" NAME="sorce Coverage Results" MODIFIED="1575730075261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/homework2$sorce.coverage" NAME="sorce Coverage Results" MODIFIED="1575804264531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hw_pyqt$login.coverage" NAME="login Coverage Results" MODIFIED="1572340862392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hw_pyqt$main_old.coverage" NAME="main_old Coverage Results" MODIFIED="1573214156936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

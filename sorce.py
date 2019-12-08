@@ -10,11 +10,12 @@ class ViewController(QtCore.QObject):
         self.viewlogin.loginSignal.connect(self.loadMainWinView)
         self.viewlogin.show()
 
-    def loadMainWinView(self, userId, userName, userStatus, userClass):
-        print(userStatus)
+    def loadMainWinView(self, logniView, userId, userName, userStatus, userClass):
+        #print(userStatus)
+        logniView.close()
         self.viewMainWIn = mainWindowController.mainWindowController()
         self.viewMainWIn.show()
-        self.viewMainWIn.refreshCard(userId, userName, userStatus, userClass)
+        self.viewMainWIn.initCard(userId, userName, userStatus, userClass)
 
 
 if __name__ == "__main__":
@@ -22,6 +23,6 @@ if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     view = ViewController()
     view.loadLoginView()
-    print("name:" + __name__)
+    #print("name:" + __name__)
     sys.exit(app.exec_())
 
