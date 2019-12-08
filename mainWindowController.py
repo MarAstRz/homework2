@@ -1,5 +1,5 @@
 import os
-
+import detailWidget
 from PyQt5 import QtCore, QtWidgets, Qt
 
 import adminCard
@@ -14,6 +14,8 @@ import wrongDialog
 from main import Ui_MainWindow
 import verifyDialog
 import newCourseDialog
+
+
 def file_extension(path):
     return os.path.splitext(path)[1]
 
@@ -44,8 +46,6 @@ class mainWindowController(QtWidgets.QMainWindow, Ui_MainWindow):
         card.setTheText(courseName, deadLine, submit)
         card.submitButton.clicked.connect(lambda :self.openDialog(className, card.className.text(), card, 0))
         self.gridLayout.addWidget(card.testCard_1, int, 0)
-        #spacerItem = QtWidgets.QSpacerItem(200, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        #self.gridLayout.addItem(spacerItem, int + 1, 0)
 
     def addCard2(self, className, courseName, deadLine, submit, int):
         card = classCard2.Ui_Form()
@@ -54,8 +54,6 @@ class mainWindowController(QtWidgets.QMainWindow, Ui_MainWindow):
         card.setTheText(courseName, deadLine, submit)
         card.submitButton_4.clicked.connect(lambda: self.openDialog(className, card.className_4.text(), card, 0))
         self.gridLayout.addWidget(card.testCard_4, int, 0)
-        #spacerItem = QtWidgets.QSpacerItem(200, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        #self.gridLayout.addItem(spacerItem, int + 1, 0)
 
     def openDialog(self, className, courseName, card, index):
         gridLayout = QtWidgets.QGridLayout(self.widget)
@@ -89,7 +87,6 @@ class mainWindowController(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def closeDialog(self):
         self.widget.setVisible(False)
-        #print(self.widget.layout().count())
         for i in range(self.widget.layout().count()):
             self.widget.layout().itemAt(i).widget().deleteLater()
         self.widget.layout().deleteLater()
@@ -123,7 +120,6 @@ class mainWindowController(QtWidgets.QMainWindow, Ui_MainWindow):
             self.thread2.start()
 
     def successSolt(self, b, ui):
-        #print(b)
         if b == 200 :
             self.setupDialog("complete", "")
             if ui != 0:
@@ -158,6 +154,7 @@ class mainWindowController(QtWidgets.QMainWindow, Ui_MainWindow):
             self.widget.layout().addWidget(wrongdialog)
 
     def cardSlot(self, res, userId, userName, className):
+        self.gridLayout.removeItem(self.gridLayout.itemAt(0))
         self.cardNum = len(res.json()[0])
         self.spacerItemCourse = self.cardNum + 1
         for i in range(len(res.json()[2])):
@@ -169,11 +166,9 @@ class mainWindowController(QtWidgets.QMainWindow, Ui_MainWindow):
         self.gridLayout.addItem(spacerItem, self.spacerItemCourse, 0)
 
     def adminCardSlot(self, res, className):
-        #print(res)
         self.gridLayout.removeItem(self.gridLayout.itemAt(0))
         self.cardNum = len(res.json()[0])
         self.spacerItemCourse = self.cardNum + 1
-        #print(self.cardNum)
         for i in range(len(res.json()[0]) + 1):
             if i == len(res.json()[0]):
                 self.adminAddNewCard(i, className)
@@ -185,11 +180,11 @@ class mainWindowController(QtWidgets.QMainWindow, Ui_MainWindow):
 
 
     def adminAddCard(self, className, courseName, deadLine, int):
-
         card = adminCard.Ui_Form()
         widget = QtWidgets.QWidget()
         card.setupUi(widget)
         card.setTheText(courseName, deadLine)
+        card.infoButton.clicked.connect(lambda: self.showDetail(className, courseName))
         card.downloadButton.clicked.connect(lambda: self.openDialog(className, card.className.text(), card, 1))
         card.closeButton.clicked.connect(lambda: self.openVerifyDialog(className, courseName))
         self.gridLayout.addWidget(card.testCard_1, int, 0)
@@ -216,7 +211,6 @@ class mainWindowController(QtWidgets.QMainWindow, Ui_MainWindow):
         gridLayout.setContentsMargins(0, 0, 0, 0)
         gridLayout.setObjectName("gridLayout2")
         self.widget.setVisible(True)
-        #print(self.widget.layout().count())
         self.widget.setLayout(gridLayout)
         ui = verifyDialog.Ui_Form()
         widget2 = QtWidgets.QWidget()
@@ -228,7 +222,6 @@ class mainWindowController(QtWidgets.QMainWindow, Ui_MainWindow):
     def adminRefreshCard(self):
         for i in range(self.gridLayout.count() - 1):
             self.gridLayout.itemAt(i).widget().deleteLater()
-        #print(self.gridLayout.itemAt(0))
         self.dThread.start()
 
 
@@ -237,7 +230,6 @@ class mainWindowController(QtWidgets.QMainWindow, Ui_MainWindow):
         gridLayout.setContentsMargins(0, 0, 0, 0)
         gridLayout.setObjectName("gridLayout2")
         self.widget.setVisible(True)
-        #print(self.widget.layout().count())
         self.widget.setLayout(gridLayout)
         ui = newCourseDialog.Ui_Form()
         widget2 = QtWidgets.QWidget()
@@ -246,12 +238,36 @@ class mainWindowController(QtWidgets.QMainWindow, Ui_MainWindow):
         gridLayout.addWidget(ui.widget_2)
         ui.submitButton.clicked.connect(lambda: self.createDir(className, ui.lineEdit.text()))
 
+    def openDetailWidget(self):
+        gridLayout = QtWidgets.QGridLayout(self.widget)
+        gridLayout.setContentsMargins(0, 0, 0, 0)
+        gridLayout.setObjectName("gridLayout2")
+        self.widget.setVisible(True)
+        self.widget.setLayout(gridLayout)
+        ui = detailWidget.Ui_Form()
+        widget2 = QtWidgets.QWidget()
+        ui.setupUi(widget2)
+        gridLayout.addWidget(ui.widget_2)
+        ui.closeButton.clicked.connect(self.closeDialog)
+        return ui
+
     def createDir(self, className, courseName):
         if courseName != '':
             self.setupDialog("loading", "请稍后...")
             self.addThreat = networkThread.addNewCardNetWork(className, courseName, self)
             self.addThreat.start()
 
+    def showDetail(self, className, courseName):
+        ui = self.openDetailWidget()
+        self.detailThread = networkThread.getDetailNetwork(className, courseName, ui, self)
+        self.detailThread.start()
+
+    def refreshDetailWidget(self, ui, result, courseName):
+        #print(result)
+        #a = "1\n2\n1\n2\n1\n2\n1\n2\n1\n2\n1\n2\n1\n2\n1\n2\n1\n2\n1\n2\n1\n2\n1\n2\n1\n2\n1\n2\n1\n2\n"
+        ui.textEdit.setText(result.json()[0])
+            #ui.textEdit.addText(result.json()[0])
+        ui.label.setText(courseName)
 
 
     def mousePressEvent(self, event):

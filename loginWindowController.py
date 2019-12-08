@@ -25,8 +25,6 @@ class loginWindowController(QtWidgets.QWidget, login.Ui_Form):
             self.label.setText("正在登陆")
             self.t = networkThread.loginNetwork(self.userIdEdit.text(), self)
             self.t.start()
-            #self.loginSignal.emit(self.userIdEdit.text(), self.userNameEdit.text(), "admin", "信计172")
-            #self.close()
 
     def mousePressEvent(self, event):
         if event.button() == Qt.Qt.LeftButton:

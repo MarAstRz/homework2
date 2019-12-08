@@ -73,7 +73,7 @@ class downloadNetwork(Qt.QThread):
         url = 'http://www.marast.cn:4000/mkzip'
         #url = '127.0.0.1:4000/mkzip'
         r = requests.get(url, data=data)
-        print(self.downloadPath + '/' + name)
+        #print(self.downloadPath + '/' + name)
         with open(self.downloadPath + '/' + name, "wb") as code:
             code.write(r.content)
         #print(r)
@@ -156,3 +156,27 @@ class delDirNetwork(Qt.QThread):
             self.refreshCard.emit(self.object)
         time.sleep(2)
         self.cDialog.emit(self.object)
+
+class getDetailNetwork(Qt.QThread):
+    netResult = Qt.pyqtSignal(object, object, requests.Response, str)
+    def __init__(self, className, courseName, ui, object):
+        super(getDetailNetwork, self).__init__()
+        self.className = className
+        self.courseName = courseName
+        self.ui = ui
+        self.object = object
+        self.netResult.connect(mainWindowController.mainWindowController.refreshDetailWidget)
+
+    def run(self):
+        path = self.className + '/' + self.courseName
+        data = {'dir': path}
+        #print(data)
+
+        r = requests.get('http://www.marast.cn:4000/getlist', data=data)
+        #print(r.json())
+        self.netResult.emit(self.object, self.ui, r, self.courseName)
+        #self.ui.textEdit.setText(r.json()[0])
+        #self.ui.label.setText(self.courseName)
+        #print(r)
+
+

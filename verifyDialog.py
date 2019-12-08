@@ -62,4 +62,4 @@ class Ui_Form(object):
         Form.setWindowTitle(_translate("Form", "Form"))
         self.pushButton.setText(_translate("Form", "取消"))
         self.submitButton.setText(_translate("Form", "确认"))
-        self.label.setText(_translate("Form", "确认删除作业项？"))
+        self.label.setText(_translate("Form", "确认删除此作业项？"))
