@@ -25,7 +25,7 @@ class mainWindowController(QtWidgets.QMainWindow, Ui_MainWindow):
         super(mainWindowController, self).__init__(parent)
         self.setupUi(self)
         self.closeButton.clicked.connect(QtCore.QCoreApplication.instance().quit)
-        self.settingButton.clicked.connect(self.test)
+        # self.settingButton.clicked.connect(self.test)
         '''thread = cardWorker(self)
         thread.start()'''
         self.cardNum = 0
@@ -95,19 +95,19 @@ class mainWindowController(QtWidgets.QMainWindow, Ui_MainWindow):
         self.widget.setVisible(True)
 
 
-    def submit(self, path, name, className, ui):
+    def submit(self, path, name, courseName, ui):
         if path != "":
             self.setupDialog("loading", "请稍后...")
             _path = path
             _class = '信计172'
             _name = name
-            _dir = '/data/fff/homework2.0/main/' + _class + '/' + className + '/'
+            _dir = '/data/fff/homework2.0/main/' + _class + '/' + courseName + '/'
             # _dir = '/Users/marast/Downloads/homework/main/' + _class + '/' + className + '/'
             fileName = _name
             fileExtension = file_extension(_path)
             try:
                 files = {'file': open(_path, 'rb')}
-                data = {'fileName': fileName, 'dir': _dir, 'fileExtension': fileExtension}
+                data = {'fileName': fileName, 'dir': _dir, 'fileExtension': fileExtension, 'className': _class, 'courseName': courseName}
                 self.thread = networkThread.uploadNetWork(self, data, files, ui)
                 self.thread.start()
             except (FileNotFoundError):
@@ -154,16 +154,17 @@ class mainWindowController(QtWidgets.QMainWindow, Ui_MainWindow):
             self.widget.layout().addWidget(wrongdialog)
 
     def cardSlot(self, res, userId, userName, className):
-        self.gridLayout.removeItem(self.gridLayout.itemAt(0))
-        self.cardNum = len(res.json()[0])
-        self.spacerItemCourse = self.cardNum + 1
-        for i in range(len(res.json()[2])):
-            self.addCard(className, res.json()[0][res.json()[2][i]], "null", "点击提交", i)
-        for i in range(len(res.json()[1])):
-            self.addCard2(className, res.json()[0][res.json()[1][i]], "null", "已提交", len(res.json()[2]) + i)
         self.label.setText(userId + ' ' + userName)
-        spacerItem = QtWidgets.QSpacerItem(200, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout.addItem(spacerItem, self.spacerItemCourse, 0)
+        if (len(res.json()) != 1):
+            self.gridLayout.removeItem(self.gridLayout.itemAt(0))
+            self.cardNum = len(res.json()[0])
+            self.spacerItemCourse = self.cardNum + 1
+            for i in range(len(res.json()[2])):
+                self.addCard(className, res.json()[0][res.json()[2][i]], "null", "点击提交", i)
+            for i in range(len(res.json()[1])):
+                self.addCard2(className, res.json()[0][res.json()[1][i]], "null", "已提交", len(res.json()[2]) + i)
+            spacerItem = QtWidgets.QSpacerItem(200, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+            self.gridLayout.addItem(spacerItem, self.spacerItemCourse, 0)
 
     def adminCardSlot(self, res, className):
         self.gridLayout.removeItem(self.gridLayout.itemAt(0))

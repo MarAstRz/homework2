@@ -3,5 +3,6 @@
     <file>complete.png</file>
     <file>wrong.png</file>
     <file>filter_g.png</file>
+    <file>plus.png</file>
   </qresource>
 </RCC>

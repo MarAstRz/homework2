@@ -33,7 +33,7 @@ class Ui_Form(object):
         self.toolButton.setStyleSheet("border:none;\n"
 "color:black;")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("plus.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(":/icon/plus.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.toolButton.setIcon(icon)
         self.toolButton.setIconSize(QtCore.QSize(50, 50))
         self.toolButton.setToolButtonStyle(QtCore.Qt.ToolButtonTextUnderIcon)
@@ -46,3 +46,5 @@ class Ui_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.toolButton.setText(_translate("Form", "新建课程"))
+
+import wrIcon_rc

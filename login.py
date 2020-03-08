@@ -134,18 +134,18 @@ class Ui_Form(object):
         self.autoLogin.setStyleSheet("color : balck;")
         self.autoLogin.setObjectName("autoLogin")
         self.horizontalLayout.addWidget(self.autoLogin)
-        self.signinButton = QtWidgets.QPushButton(Form)
-        self.signinButton.setGeometry(QtCore.QRect(221, 5, 25, 20))
+        self.aboutButton = QtWidgets.QPushButton(Form)
+        self.aboutButton.setGeometry(QtCore.QRect(221, 5, 25, 20))
         font = QtGui.QFont()
         font.setFamily("Yuanti SC")
         font.setPointSize(11)
-        self.signinButton.setFont(font)
-        self.signinButton.setStyleSheet("QPushButton{\n"
+        self.aboutButton.setFont(font)
+        self.aboutButton.setStyleSheet("QPushButton{\n"
 "color : black;\n"
 "border: none;}\n"
 "QPushButton:hover{\n"
 "color : rgb(15, 128, 255);}")
-        self.signinButton.setObjectName("signinButton")
+        self.aboutButton.setObjectName("signinButton")
         self.label = QtWidgets.QLabel(Form)
         self.label.setGeometry(QtCore.QRect(64, 60, 122, 32))
         font = QtGui.QFont()
@@ -160,7 +160,7 @@ class Ui_Form(object):
         self.usernameWidget.raise_()
         self.checkboxWidget.raise_()
         self.passwordWidget.raise_()
-        self.signinButton.raise_()
+        self.aboutButton.raise_()
         self.label.raise_()
 
         self.retranslateUi(Form)
@@ -175,6 +175,6 @@ class Ui_Form(object):
         self.closeButton.setText(_translate("Form", "×"))
         self.saveUser.setText(_translate("Form", "保存用户"))
         self.autoLogin.setText(_translate("Form", "自动登陆"))
-        self.signinButton.setText(_translate("Form", "注册"))
+        self.aboutButton.setText(_translate("Form", "关于"))
         self.label.setText(_translate("Form", "用户验证"))
 import icon_rc
