@@ -49,23 +49,7 @@ class Ui_MainWindow(object):
                                        "QPushButton:hover{\n"
                                        "color: black;}")
         self.closeButton.setObjectName("closeButton")
-        self.settingButton = QtWidgets.QPushButton(self.topTitleBar)
-        self.settingButton.setGeometry(QtCore.QRect(306, 12, 32, 32))
-        font = QtGui.QFont()
-        font.setFamily("Yuanti SC")
-        font.setPointSize(23)
-        self.settingButton.setFont(font)
-        self.settingButton.setStyleSheet("\n"
-                                         "background-color: rgba(255, 255, 255, 0);\n"
-                                         "color : black;\n"
-                                         "\n"
-                                         "")
-        self.settingButton.setText("")
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/icon/filter_g.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.settingButton.setIcon(icon)
-        self.settingButton.setIconSize(QtCore.QSize(24, 24))
-        self.settingButton.setObjectName("settingButton")
+
         self.label = QtWidgets.QLabel(self.topTitleBar)
         self.label.setGeometry(QtCore.QRect(110, 18, 130, 21))
         font = QtGui.QFont()

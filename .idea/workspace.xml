@@ -1,66 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08cad10c-09f9-4a50-933b-c91c746a1df7" name="Default Changelist" comment="3月8日上传(final)">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/hw-pyqt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hw-pyqt.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="08cad10c-09f9-4a50-933b-c91c746a1df7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Icon.icns" beforeDir="false" afterPath="$PROJECT_DIR$/Icon.icns" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminCard.py" beforeDir="false" afterPath="$PROJECT_DIR$/adminCard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminCard.ui" beforeDir="false" afterPath="$PROJECT_DIR$/adminCard.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classCard1.py" beforeDir="false" afterPath="$PROJECT_DIR$/classCard1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classCard1.ui" beforeDir="false" afterPath="$PROJECT_DIR$/classCard1.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classCard2.py" beforeDir="false" afterPath="$PROJECT_DIR$/classCard2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classCard2.ui" beforeDir="false" afterPath="$PROJECT_DIR$/classCard2.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete.png" beforeDir="false" afterPath="$PROJECT_DIR$/complete.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/completeDialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/completeDialog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/completeDialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/completeDialog.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detailWidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/detailWidget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detailWidget.ui" beforeDir="false" afterPath="$PROJECT_DIR$/detailWidget.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter_g.png" beforeDir="false" afterPath="$PROJECT_DIR$/filter_g.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon_rc.py" beforeDir="false" afterPath="$PROJECT_DIR$/icon_rc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loadingDialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/loadingDialog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loadingDialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/loadingDialog.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.ui" beforeDir="false" afterPath="$PROJECT_DIR$/login.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loginWindowController.py" beforeDir="false" afterPath="$PROJECT_DIR$/loginWindowController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.ui" beforeDir="false" afterPath="$PROJECT_DIR$/main.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainWindowController.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainWindowController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainWindowIcon_rc.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainWindowIcon_rc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/networkThread.py" beforeDir="false" afterPath="$PROJECT_DIR$/networkThread.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newCard.py" beforeDir="false" afterPath="$PROJECT_DIR$/newCard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newCard.ui" beforeDir="false" afterPath="$PROJECT_DIR$/newCard.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newCourseDialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/newCourseDialog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newCourseDialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/newCourseDialog.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic.png" beforeDir="false" afterPath="$PROJECT_DIR$/pic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plus.png" beforeDir="false" afterPath="$PROJECT_DIR$/plus.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sorce.py" beforeDir="false" afterPath="$PROJECT_DIR$/sorce.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp.iconset/icon_128x128.png" beforeDir="false" afterPath="$PROJECT_DIR$/tmp.iconset/icon_128x128.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp.iconset/icon_128x128@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/tmp.iconset/icon_128x128@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp.iconset/icon_16x16.png" beforeDir="false" afterPath="$PROJECT_DIR$/tmp.iconset/icon_16x16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp.iconset/icon_16x16@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/tmp.iconset/icon_16x16@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp.iconset/icon_256x256.png" beforeDir="false" afterPath="$PROJECT_DIR$/tmp.iconset/icon_256x256.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp.iconset/icon_256x256@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/tmp.iconset/icon_256x256@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp.iconset/icon_32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/tmp.iconset/icon_32x32.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp.iconset/icon_32x32@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/tmp.iconset/icon_32x32@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp.iconset/icon_512x512.png" beforeDir="false" afterPath="$PROJECT_DIR$/tmp.iconset/icon_512x512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp.iconset/icon_512x512@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/tmp.iconset/icon_512x512@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/updateDialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/updateDialog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/updateDialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/updateDialog.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user.ini" beforeDir="false" afterPath="$PROJECT_DIR$/user.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/verifyDialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/verifyDialog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/verifyDialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/verifyDialog.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrIcon.qrc" beforeDir="false" afterPath="$PROJECT_DIR$/wrIcon.qrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrIcon_rc.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrIcon_rc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrong.png" beforeDir="false" afterPath="$PROJECT_DIR$/wrong.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrongDialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrongDialog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrongDialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/wrongDialog.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,7 +195,7 @@
       <workItem from="1580050962104" duration="171000" />
       <workItem from="1580113633869" duration="582000" />
       <workItem from="1580469725538" duration="438000" />
-      <workItem from="1583637610858" duration="1007000" />
+      <workItem from="1583637610858" duration="1138000" />
     </task>
     <task id="LOCAL-00001" summary="pycharmCommitTest">
       <created>1575012189340</created>
@@ -311,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575810607618</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="3月8日上传(final)">
+      <created>1583638718168</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1583638718168</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,35 +301,35 @@
     <option name="LAST_COMMIT_MESSAGE" value="3月8日上传(final)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="721" y="165" key="CommitChangelistDialog2" timestamp="1583637673398">
+    <state x="721" y="165" key="CommitChangelistDialog2" timestamp="1583638717999">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="275" y="117" key="CommitChangelistDialog2/0.0.1440.827@0.0.1440.827" timestamp="1575810607510" />
-    <state x="721" y="165" key="CommitChangelistDialog2/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1583637673398" />
+    <state x="721" y="165" key="CommitChangelistDialog2/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1583638717999" />
     <state x="748" y="265" key="FileChooserDialogImpl" timestamp="1580469799428">
       <screen x="0" y="0" width="1920" height="1008" />
     </state>
     <state x="748" y="265" key="FileChooserDialogImpl/1920.0.1440.900/0.0.1920.1008@0.0.1920.1008" timestamp="1580469799428" />
-    <state width="1878" height="203" key="GridCell.Tab.0.bottom" timestamp="1583638680668">
+    <state width="1878" height="203" key="GridCell.Tab.0.bottom" timestamp="1583638751259">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1398" height="265" key="GridCell.Tab.0.bottom/0.0.1440.827@0.0.1440.827" timestamp="1577255271159" />
-    <state width="1878" height="203" key="GridCell.Tab.0.bottom/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1583638680668" />
-    <state width="1878" height="203" key="GridCell.Tab.0.center" timestamp="1583638680667">
+    <state width="1878" height="203" key="GridCell.Tab.0.bottom/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1583638751259" />
+    <state width="1878" height="203" key="GridCell.Tab.0.center" timestamp="1583638751257">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1398" height="265" key="GridCell.Tab.0.center/0.0.1440.827@0.0.1440.827" timestamp="1577255271158" />
-    <state width="1878" height="203" key="GridCell.Tab.0.center/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1583638680667" />
-    <state width="1878" height="203" key="GridCell.Tab.0.left" timestamp="1583638680667">
+    <state width="1878" height="203" key="GridCell.Tab.0.center/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1583638751257" />
+    <state width="1878" height="203" key="GridCell.Tab.0.left" timestamp="1583638751256">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1398" height="265" key="GridCell.Tab.0.left/0.0.1440.827@0.0.1440.827" timestamp="1577255271158" />
-    <state width="1878" height="203" key="GridCell.Tab.0.left/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1583638680667" />
-    <state width="1878" height="203" key="GridCell.Tab.0.right" timestamp="1583638680668">
+    <state width="1878" height="203" key="GridCell.Tab.0.left/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1583638751256" />
+    <state width="1878" height="203" key="GridCell.Tab.0.right" timestamp="1583638751258">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1398" height="265" key="GridCell.Tab.0.right/0.0.1440.827@0.0.1440.827" timestamp="1577255271159" />
-    <state width="1878" height="203" key="GridCell.Tab.0.right/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1583638680668" />
+    <state width="1878" height="203" key="GridCell.Tab.0.right/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1583638751258" />
     <state width="1398" height="265" key="GridCell.Tab.1.bottom" timestamp="1577255271162">
       <screen x="0" y="0" width="1440" height="827" />
     </state>
@@ -401,10 +350,11 @@
       <screen x="0" y="0" width="1920" height="1008" />
     </state>
     <state x="469" y="142" key="SettingsEditor/1920.0.1440.900/0.0.1920.1008@0.0.1920.1008" timestamp="1580469897805" />
-    <state x="320" y="153" key="Vcs.Push.Dialog.v2" timestamp="1575810612913">
-      <screen x="0" y="0" width="1440" height="827" />
+    <state x="427" y="200" key="Vcs.Push.Dialog.v2" timestamp="1583638722128">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="320" y="153" key="Vcs.Push.Dialog.v2/0.0.1440.827@0.0.1440.827" timestamp="1575810612913" />
+    <state x="427" y="200" key="Vcs.Push.Dialog.v2/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1583638722128" />
     <state x="385" y="151" width="670" height="676" key="search.everywhere.popup" timestamp="1575803851277">
       <screen x="0" y="0" width="1440" height="827" />
     </state>
@@ -414,7 +364,7 @@
     <SUITE FILE_PATH="coverage/hw_pyqt$sorce.coverage" NAME="sorce Coverage Results" MODIFIED="1573961941485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hw_pyqt$untitled2.coverage" NAME="untitled2 Coverage Results" MODIFIED="1572335505085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hw_pyqt$untitled.coverage" NAME="untitled Coverage Results" MODIFIED="1571974733945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/homework2$sorce.coverage" NAME="sorce Coverage Results" MODIFIED="1583638680658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/homework2$sorce.coverage" NAME="sorce Coverage Results" MODIFIED="1585878838815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hw_pyqt$login.coverage" NAME="login Coverage Results" MODIFIED="1572340862392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hw_pyqt$main_old.coverage" NAME="main_old Coverage Results" MODIFIED="1573214156936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
